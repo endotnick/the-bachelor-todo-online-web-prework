@@ -42,5 +42,6 @@ def get_average_age_for_season(data, season)
   contenstants = data[season].length
   data[season].each do |entry|
     age += entry['age'].to_f
-    
+  end
+  (age/contenstants).round
 end
