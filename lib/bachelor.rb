@@ -2,7 +2,6 @@ def get_first_name_of_season_winner(data, season)
 
   winner = data[season].select do |entry|
     entry['status'] == 'Winner'
-    puts "entry: #{entry} status: #{entry['status']}"
   end
   winner
 end
