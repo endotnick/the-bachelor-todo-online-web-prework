@@ -26,15 +26,13 @@ def count_contestants_by_hometown(data, hometown)
 end
 
 def get_occupation(data, hometown)
-  occupation = ''
   data.each do |seasons, entries|
     entries.each do |entry|
       if entry['hometown'] == hometown
-        occupation << entry['occupation']
+        return entry['occupation']
       end
     end
   end
-  occupation
 end
 
 def get_average_age_for_season(data, season)
