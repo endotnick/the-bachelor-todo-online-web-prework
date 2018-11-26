@@ -5,8 +5,8 @@ end
 
 def get_contestant_name(data, occupation)
   contestant = ''
-  data.values.each do |entry|
-    puts entry
+  data.each do |seasons, entries|
+    entries.each do |entry|
     if entry['occupation'] == occupation
       contestant << entry['name']
     end
