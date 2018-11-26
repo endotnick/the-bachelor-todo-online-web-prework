@@ -8,7 +8,6 @@ def get_contestant_name(data, occupation)
       if entry['occupation'] == occupation
         return entry['name']
       end
-    end
   end
 end
 
