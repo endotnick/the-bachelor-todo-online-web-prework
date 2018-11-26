@@ -1,8 +1,8 @@
 def get_first_name_of_season_winner(data, season)
 
   winner = data[season].select do |k, v|
-    
-    v['status'] == 'Winner'
+
+    k['status'] == 'Winner'
     puts "entry: #{k}"
   end
   winner
