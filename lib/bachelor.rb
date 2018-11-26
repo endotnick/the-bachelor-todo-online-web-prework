@@ -8,7 +8,7 @@ def get_contestant_name(data, occupation)
   data.values.each do |entry|
     puts entry
     if entry['occupation'] == occupation
-      contestant = entry['name']
+      contestant << entry['name']
     end
   end
   contestant
